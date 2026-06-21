@@ -109,7 +109,7 @@ uvx pre-commit run --all-files
 uvx pre-commit run --all-files
 
 # run the example module and verify the environment (.venv/)
-uv run python -m datafun.app_case
+uv run python -m datafun.app_airline
 
 # do chores
 uv run python -m pyright
@@ -142,34 +142,33 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 ## Example Output (Can Remove this Section after You Verify)
 
 ```shell
- | INFO | P06 | --- Section 9: Summary and next steps ---
- | INFO | P06 | ========================
- | INFO | P06 | SUMMARY
- | INFO | P06 | ========================
- | INFO | P06 | Dataset: owid-co2-data-subset
- | INFO | P06 | Original rows: 350
- | INFO | P06 | Clean rows:    308
- | INFO | P06 | Groups found in country: ['Brazil', 'Canada', 'China', 'France', 'Germany', 'India', 'Japan', 'United Kingdom', 'United States', 'World']
- | INFO | P06 | ======================
- | INFO | P06 | Review the results.
- | INFO | P06 | Determine the strongest correlations.
- | INFO | P06 | ======================
- | INFO | P06 | Look for interesting patterns in the charts.
- | INFO | P06 | Repeat the process, exploring additional angles.
- | INFO | P06 | After finding interesting insights, conclude your analysis.
- | INFO | P06 | ======================
- | INFO | P06 | Include instructions and specifics in your README.md file.
- | INFO | P06 | Write up your narrative on your docs/index.md file.
- | INFO | P06 | Include your next step suggestions for further analysis or modeling.
- | INFO | P06 | ======================
- | INFO | P06 | ----- in a script, call plt.show() once at the end to display all charts -----
- | INFO | P06 | ----- in a script, close the chart windows (with the close button) to continue  -----
- | INFO | P06 | EDA workflow complete
- | INFO | P06 | IMPORTANT: This script creates chart windows.
- | INFO | P06 | Close any chart windows and terminate this process with CTRL+c as needed.
- | INFO | P06 | ========================
- | INFO | P06 | Executed successfully!
- | INFO | P06 | ========================
+ 2026-06-21 16:09:55 | INFO | P06 | ========================
+2026-06-21 16:09:55 | INFO | P06 | SUMMARY
+2026-06-21 16:09:55 | INFO | P06 | ========================
+2026-06-21 16:09:55 | INFO | P06 | Dataset: airline-safety
+2026-06-21 16:09:55 | INFO | P06 | Original rows: 56
+2026-06-21 16:09:55 | INFO | P06 | Clean rows:    56
+2026-06-21 16:09:55 | INFO | P06 | Groups found in airline: ['Aer Lingus', 'Aeroflot*', 'Aerolineas Argentinas', 'Aeromexico*', 'Air Canada', 'Air France', 'Air India*', 'Air New Zealand*', 'Alaska Airlines*', 'Alitalia', 'All Nippon Airways', 'American*', 'Austrian Airlines', 'Avianca', 'British Airways*', 'COPA', 'Cathay Pacific*', 'China Airlines', 'Condor', 'Delta / Northwest*', 'Egyptair', 'El Al', 'Ethiopian Airlines', 'Finnair', 'Garuda Indonesia', 'Gulf Air', 'Hawaiian Airlines', 'Iberia', 'Japan Airlines', 'KLM*', 'Kenya Airways', 'Korean Air', 'LAN Airlines', 'Lufthansa*', 'Malaysia Airlines', 'Pakistan International', 'Philippine Airlines', 'Qantas*', 'Royal Air Maroc', 'SAS*', 'SWISS*', 'Saudi Arabian', 'Singapore Airlines', 'South African', 'Southwest Airlines', 'Sri Lankan / AirLanka', 'TACA', 'TAM', 'TAP - Air Portugal', 'Thai Airways', 'Turkish Airlines', 'US Airways / America West*', 'United / Continental*', 'Vietnam Airlines', 'Virgin Atlantic', 'Xiamen Airlines']
+2026-06-21 16:09:55 | INFO | P06 | ======================
+2026-06-21 16:09:55 | INFO | P06 | Review the results.
+2026-06-21 16:09:55 | INFO | P06 | Determine the strongest correlations.
+2026-06-21 16:09:55 | INFO | P06 | ======================
+2026-06-21 16:09:55 | INFO | P06 | Look for interesting patterns in the charts.
+2026-06-21 16:09:55 | INFO | P06 | Repeat the process, exploring additional angles.
+2026-06-21 16:09:55 | INFO | P06 | After finding interesting insights, conclude your analysis.
+2026-06-21 16:09:55 | INFO | P06 | ======================
+2026-06-21 16:09:55 | INFO | P06 | Include instructions and specifics in your README.md file.
+2026-06-21 16:09:55 | INFO | P06 | Write up your narrative on your docs/index.md file.
+2026-06-21 16:09:55 | INFO | P06 | Include your next step suggestions for further analysis or modeling.
+2026-06-21 16:09:55 | INFO | P06 | ======================
+2026-06-21 16:09:55 | INFO | P06 | ----- in a script, call plt.show() once at the end to display all charts -----
+2026-06-21 16:09:55 | INFO | P06 | ----- in a script, close the chart windows (with the close button) to continue  -----
+2026-06-21 16:10:57 | INFO | P06 | EDA workflow complete
+2026-06-21 16:10:57 | INFO | P06 | IMPORTANT: This script creates chart windows.
+2026-06-21 16:10:57 | INFO | P06 | Close any chart windows and terminate this process with CTRL+c as needed.
+2026-06-21 16:10:57 | INFO | P06 | ========================
+2026-06-21 16:10:57 | INFO | P06 | Executed successfully!
+2026-06-21 16:10:57 | INFO | P06 | ========================
 ```
 
 ## Findings and Visuals
@@ -187,15 +186,11 @@ In your custom project, follow this example, but
 - this `README.md` should include your commands, process, and visuals, and
 - `docs/index.md` should include your narrative.
 
-Remove unnecessary instructional comments in your custom files.
-
 Update these figures to present interesting results from your custom project:
 
-![Correlation Heatmap](./docs/images/Figure_1.png)
+![Correlation Heatmap](./docs/images/Airline_Figure_1.png)
 
-![Provide a Useful Caption](./docs/images/Figure_2.png)
-
-![Provide a Useful Caption](./docs/images/Figure_3.png)
+![Provide a Useful Caption](./docs/images/Airline_Figure_2.png)
 
 ## Project Documentation
 

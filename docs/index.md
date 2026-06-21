@@ -22,3 +22,49 @@ to get these projects running on your machine.
 The API page is not always easy to read at first,
 but it becomes useful as you get more comfortable with project structure,
 modules, functions, and docstrings.
+
+## Custom Project
+
+## Basis
+
+Technical Modification dataset includes co2 emissions data from multiple countries. CSV file columns"
+  "year",
+  "co2",
+  "co2_per_capita",
+  "population",
+  "gdp"
+  Workflow was based off of provided datafun-06-applied app_case.py file and eda_case.ipynb file. Both
+  were copied and retitled, replacing case with bjean.
+Custom Project dataset includes airline safety data provided by github source. CSV file columns:
+  "avail_seat_km_per_week",
+  "incidents_85_99",
+  "fatal_accidents_85_99",
+  "fatalities_85_99",
+  "incidents_00_14",
+  "fatal_accidents_00_14",
+  "fatalities_00_14"
+
+## Phase 4 Technical Modification
+
+I adjusted both the python module and the notebook to run the plot using population in correlation with
+co2 emissions as opposed to the original
+plot comparing co2 emissions with GDP. I ran both
+files and confirmed that plots ran with
+the modification.
+
+## Phase 5 Custom
+
+The custom project focused on both the python module and notebook with both running successfully. The
+workflow group column focuses on airlines, which
+can cause visual decline in the legend
+if you don't alter the location. Specific
+Instruction provided in read me to add to the plot.
+Two of the original plot types were used here, heat map
+and scatter plot. The box plot visually did not present well. I do think finding a way to group the
+airlines on a larger scale might add value to the analysis,
+example might be combining them by country
+of origin. It also would be worth
+comparing these date ranges further by said larger
+scale group. Are airlines from different countries
+seeing improvements in incidents/fatalities over time
+and as the km per week affecting that in anyway.
